@@ -8,19 +8,19 @@
             "source_ami_filter": {
               "filters": {
               "virtualization-type": "hvm",
-              "name": "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*",
+              "name": "amzn-ami-hvm-2017.09.*-gp2",
               "root-device-type": "ebs"
               },
               "most_recent": true
             },
-            "ssh_username": "ubuntu",
+            "ssh_username": "ec2-user",
             "type": "amazon-ebs"
         }
     ],
     "provisioners": [
         {
             "type": "shell",
-            "script": "example.sh"
+            "script": "./example.sh"
         }
     ]
 }
