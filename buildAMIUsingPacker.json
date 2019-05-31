@@ -5,15 +5,7 @@
             "ami_name": "packer-linux-aws-demo-{{timestamp}}",
             "instance_type": "t2.micro",
             "region": "us-east-2",
-            "source_ami_filter": {
-              "filters": {
-              "virtualization-type": "hvm",
-              "name": "amzn-ami-hvm-2017.09.*-gp2",
-              "root-device-type": "ebs"
-              },
-              "most_recent": true
-	      "owners": ["932589472370"],            
-},
+            "source_ami": "ami-04768381bf606e2b3",
             "ssh_username": "ec2-user",
             "type": "amazon-ebs"
         }
